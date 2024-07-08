@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MobilController">
+   <children>
+      <BorderPane layoutX="193.0" layoutY="223.0" prefHeight="699.0" prefWidth="1028.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="91.0" prefWidth="1028.0" style="-fx-background-color: #3a3c3d;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="BackToHome" fitHeight="97.0" fitWidth="113.0" layoutX="12.0" layoutY="-2.0" onMouseClicked="#initialize" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Downloads/Logo-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <TextField alignment="CENTER" layoutX="574.0" layoutY="27.0" prefHeight="38.0" prefWidth="263.0" promptText="Pencarian" styleClass="search-box" stylesheets="@design.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="846.0" layoutY="26.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="137.0" styleClass="search-box" stylesheets="@design.css" text="Cari" textFill="#3a3c3d">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="30.0" layoutY="43.0" prefHeight="522.0" prefWidth="301.0" styleClass="promo-pane" stylesheets="@design.css">
+                     <children>
+                        <Pane fx:id="PaneMobilBX57" onMouseClicked="#initialize" prefHeight="542.0" prefWidth="308.0">
+                           <children>
+                              <ImageView fitHeight="173.0" fitWidth="258.0" layoutX="22.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/image%203%20(40).png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="22.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pikoletrik  AWL BX57" wrappingWidth="246.5830078125">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="22.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/car-seat_5102816.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="23.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/fuel_14059342.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="160.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/gear-shift_9200376.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="160.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/star-inside-circle.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="60.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="60.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listrik">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="196.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="manual">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="196.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9.3k likes">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="ButtonMobilBX57" layoutX="15.0" layoutY="446.0" mnemonicParsing="false" onMouseClicked="#initialize" prefHeight="41.0" prefWidth="261.0" styleClass="button-pane" stylesheets="@design.css" text="Rp800.000/day">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="364.0" layoutY="43.0" prefHeight="522.0" prefWidth="301.0" styleClass="promo-pane" stylesheets="@design.css">
+                     <children>
+                        <Pane fx:id="PaneMobilBX67" onMouseClicked="#initialize" prefHeight="542.0" prefWidth="308.0">
+                           <children>
+                              <ImageView fitHeight="173.0" fitWidth="258.0" layoutX="22.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/image%203%20(47).png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="22.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobiletrik BX67" wrappingWidth="246.5830078125">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="22.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/car-seat_5102816.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="23.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/fuel_14059342.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="160.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/gear-shift_9200376.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="160.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/star-inside-circle.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="60.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="60.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listrik">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="196.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="manual">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="196.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9.3k likes">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="ButtonMobilBX67" layoutX="20.0" layoutY="443.0" mnemonicParsing="false" onMouseClicked="#initialize" prefHeight="41.0" prefWidth="261.0" styleClass="button-pane" stylesheets="@design.css" text="Rp600.000/day">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="698.0" layoutY="43.0" prefHeight="522.0" prefWidth="301.0" styleClass="promo-pane" stylesheets="@design.css">
+                     <children>
+                        <Pane fx:id="PaneMobilBX77" onMouseClicked="#initialize" prefHeight="542.0" prefWidth="308.0">
+                           <children>
+                              <ImageView fitHeight="173.0" fitWidth="258.0" layoutX="22.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/image%203%20(5).png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="22.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobiletrik BX77" wrappingWidth="246.5830078125">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="22.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/car-seat_5102816.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="23.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/fuel_14059342.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="160.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/gear-shift_9200376.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="160.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/star-inside-circle.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="60.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="60.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listrik">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="196.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="manual">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="196.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9.3k likes">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="ButtonMobilBX77" layoutX="20.0" layoutY="443.0" mnemonicParsing="false" onMouseClicked="#initialize" prefHeight="41.0" prefWidth="261.0" styleClass="button-pane" stylesheets="@design.css" text="Rp1.000.000/day">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

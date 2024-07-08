@@ -1,0 +1,55 @@
+.search-box{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 100;
+}
+
+.searchhh-box{
+    -fx-background-color: #a0ccc0;
+    -fx-background-radius: 95;
+}
+
+.transparat{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.search-button{
+    -fx-background-color: #828282;
+    -fx-background-radius: 30;
+}
+
+.promo-pane{
+    -fx-background-color: #a0ccc0;
+    -fx-background-radius: 13;
+}
+
+.button-pane{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+}
+
+.button-fitur{
+    -fx-background-color: #a0ccc0;
+    -fx-background-radius: 10;
+    -fx-border-width:2px;
+    -fx-border-radius: 10px;
+}
+
+.fitur-pane{
+    -fx-background-color: #3c3a3d;
+    -fx-background-radius: 15;
+}
+
+.button-pesan{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 7;
+}
+
+.petak-pane{
+    -fx-background-color: #a0ccc0;
+    -fx-background-radius: 0;
+}
+
+.pettak-pane{
+    -fx-background-color: #3c3a3d;
+    -fx-background-radius: 0;
+}

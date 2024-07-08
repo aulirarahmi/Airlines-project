@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashboardPemilik">
+   <children>
+      <BorderPane layoutX="193.0" layoutY="223.0" prefHeight="699.0" prefWidth="1028.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="91.0" prefWidth="1028.0" style="-fx-background-color: #3a3c3d;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="97.0" fitWidth="113.0" layoutX="12.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Downloads/Logo-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="59.0" fitWidth="54.0" layoutX="939.0" layoutY="19.0" onMouseClicked="#LogOut" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Downloads/door%20(3).png" />
+                     </image>
+                  </ImageView>
+                  <TextField alignment="CENTER" layoutX="574.0" layoutY="27.0" prefHeight="38.0" prefWidth="263.0" promptText="Pencarian" styleClass="search-box" stylesheets="@design.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="846.0" layoutY="26.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="73.0" styleClass="search-box" stylesheets="@design.css" text="Cari" textFill="#3a3c3d">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #a0ccc0;" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tableView" editable="true" layoutX="67.0" layoutY="39.0" prefHeight="349.0" prefWidth="901.0">
+                    <columns>
+                      <TableColumn fx:id="namaPemilikColumn" prefWidth="222.0" text="Nama Pemilik" />
+                      <TableColumn fx:id="jenisKendaraanColumn" prefWidth="222.0" text="Jenis Kendaraan" />
+                        <TableColumn fx:id="platKendaraanColumn" prefWidth="231.0" text="Plat Kendaraan" />
+                        <TableColumn fx:id="hargaSewaColumn" prefWidth="225.0" text="Harga sewa" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="namaPemilik" layoutX="67.0" layoutY="410.0" prefHeight="34.0" prefWidth="208.0" promptText="Nama Pemilik " styleClass="button-pesan" stylesheets="@design.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <TextField fx:id="jenisKendaraan" layoutX="300.0" layoutY="410.0" prefHeight="34.0" prefWidth="208.0" promptText="Jenis Kendaraan" styleClass="button-pesan" stylesheets="@design.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <TextField fx:id="platKendaraan" layoutX="531.0" layoutY="410.0" prefHeight="34.0" prefWidth="208.0" promptText="Plat Kendaraan" styleClass="button-pesan" stylesheets="@design.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <TextField fx:id="HargaSewa" layoutX="760.0" layoutY="410.0" prefHeight="34.0" prefWidth="208.0" promptText="Harga sewa" styleClass="button-pesan" stylesheets="@design.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Button layoutX="69.0" layoutY="465.0" mnemonicParsing="false" onAction="#handleButtonTambahAction" prefHeight="34.0" prefWidth="440.0" styleClass="button-pane" stylesheets="@design.css" text="Tambah">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="531.0" layoutY="465.0" mnemonicParsing="false" onAction="#handleButtonEditAction" prefHeight="34.0" prefWidth="440.0" styleClass="button-pesan" stylesheets="@design.css" text="Edit data">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="68.0" layoutY="513.0" mnemonicParsing="false" onAction="#handleButtonHapusAction" prefHeight="34.0" prefWidth="903.0" styleClass="button-pane" stylesheets="@design.css" text="Hapus">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

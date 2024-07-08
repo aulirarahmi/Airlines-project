@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<com.sun.javafx.collections.ObservableListWrapper>
+    <listenerHelper class="com.sun.javafx.collections.ListListenerHelper$Generic">
+        <changeListeners>
+            <null></null>
+            <null></null>
+            <null></null>
+            <null></null>
+            <null></null>
+            <null></null>
+            <null></null>
+            <null></null>
+            <null></null>
+            <javafx.collections.WeakListChangeListener>
+                <ref>
+                    <referent class="null"></referent>
+                    <queue class="java.lang.ref.ReferenceQueue$Null">
+                        <lock></lock>
+                        <queueLength>0</queueLength>
+                    </queue>
+                </ref>
+            </javafx.collections.WeakListChangeListener>
+            <null></null>
+            <javafx.collections.WeakListChangeListener>
+                <ref>
+                    <referent class="null"></referent>
+                    <queue class="java.lang.ref.ReferenceQueue$Null"
+                        reference="../../../javafx.collections.WeakListChangeListener/ref/queue"></queue>
+                </ref>
+            </javafx.collections.WeakListChangeListener>
+            <javafx.collections.WeakListChangeListener>
+                <ref>
+                    <referent class="null"></referent>
+                    <queue class="java.lang.ref.ReferenceQueue$Null"
+                        reference="../../../javafx.collections.WeakListChangeListener/ref/queue"></queue>
+                </ref>
+            </javafx.collections.WeakListChangeListener>
+            <null></null>
+            <null></null>
+            <null></null>
+            <null></null>
+        </changeListeners>
+        <invalidationSize>0</invalidationSize>
+        <changeSize>13</changeSize>
+        <locked>false</locked>
+    </listenerHelper>
+    <changeBuilder>
+        <list class="com.sun.javafx.collections.ObservableListWrapper" reference="../.."></list>
+        <changeLock>0</changeLock>
+        <addRemoveChanges></addRemoveChanges>
+    </changeBuilder>
+    <backingList>
+        <siJasaKrl.Kendaraan>
+            <pemilikKendaraan>a</pemilikKendaraan>
+            <jenis>b</jenis>
+            <platNomor>c</platNomor>
+            <hargaSewa>0</hargaSewa>
+        </siJasaKrl.Kendaraan>
+        <siJasaKrl.Kendaraan>
+            <pemilikKendaraan>gha</pemilikKendaraan>
+            <jenis>bf</jenis>
+            <platNomor>fff</platNomor>
+            <hargaSewa>0</hargaSewa>
+        </siJasaKrl.Kendaraan>
+        <siJasaKrl.Kendaraan>
+            <pemilikKendaraan>aulira</pemilikKendaraan>
+            <jenis>mobil</jenis>
+            <platNomor>ab 1705 ca</platNomor>
+            <hargaSewa>15000</hargaSewa>
+        </siJasaKrl.Kendaraan>
+        <siJasaKrl.Kendaraan>
+            <pemilikKendaraan>bima</pemilikKendaraan>
+            <jenis>Alphar</jenis>
+            <platNomor>AB 5454 YQ</platNomor>
+            <hargaSewa>0</hargaSewa>
+        </siJasaKrl.Kendaraan>
+        <siJasaKrl.Kendaraan>
+            <pemilikKendaraan>fdskald</pemilikKendaraan>
+            <jenis>dgf</jenis>
+            <platNomor>gfd</platNomor>
+            <hargaSewa>150000</hargaSewa>
+        </siJasaKrl.Kendaraan>
+        <siJasaKrl.Kendaraan>
+            <pemilikKendaraan>ihsan</pemilikKendaraan>
+            <jenis>toyota </jenis>
+            <platNomor>AB 5 AD</platNomor>
+            <hargaSewa>500000</hargaSewa>
+        </siJasaKrl.Kendaraan>
+    </backingList>
+</com.sun.javafx.collections.ObservableListWrapper>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Motor_2_PemesananController">
+   <children>
+      <BorderPane layoutX="193.0" layoutY="223.0" prefHeight="699.0" prefWidth="1028.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="91.0" prefWidth="1028.0" style="-fx-background-color: #3a3c3d;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="BackToHome" fitHeight="97.0" fitWidth="113.0" layoutX="12.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Downloads/Logo-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <TextField alignment="CENTER" layoutX="574.0" layoutY="27.0" prefHeight="38.0" prefWidth="263.0" promptText="Pencarian" styleClass="search-box" stylesheets="@design.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="846.0" layoutY="26.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="137.0" styleClass="search-box" stylesheets="@design.css" text="Cari" textFill="#3a3c3d">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="28.0" layoutY="53.0" prefHeight="240.0" prefWidth="301.0" styleClass="promo-pane" stylesheets="@design.css">
+                     <children>
+                        <ImageView fitHeight="173.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Downloads/image%203%20(53).png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="23.0" top="33.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="355.0" layoutY="53.0" prefHeight="240.0" prefWidth="301.0" styleClass="promo-pane" stylesheets="@design.css">
+                     <children>
+                        <ImageView fitHeight="173.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Downloads/image%203%20(50).png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="23.0" top="33.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="28.0" layoutY="317.0" prefHeight="240.0" prefWidth="301.0" styleClass="promo-pane" stylesheets="@design.css">
+                     <children>
+                        <ImageView fitHeight="173.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Downloads/image%203%20(51).png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="23.0" top="33.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="355.0" layoutY="317.0" prefHeight="240.0" prefWidth="301.0" styleClass="promo-pane" stylesheets="@design.css">
+                     <children>
+                        <ImageView fitHeight="173.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Downloads/image%203%20(52).png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="23.0" top="33.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Text layoutX="682.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MotorTro Letrik IT20" wrappingWidth="289.66845703125">
+                     <font>
+                        <Font name="System Bold" size="37.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="686.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MotorTro Letrik IT20 didesain khusus untuk masyarakat perkotaan sebagai salah satu alternatif kendaraan yang ramah lingkungan dan hemat energi. Dmotor ini tidak memerlukan bahan bakar minyak sehingga mengurangi emisi karbon dan polusi udara. UrbanEco memiliki kecepatan maksimal 60 km/jam dan jarak tempuh hingga 80 km sekali pengisian daya." textAlignment="JUSTIFY" wrappingWidth="302.939453125">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="BackButton" layoutX="686.0" layoutY="505.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="294.0" text="Back">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="686.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp957.500/day" textAlignment="RIGHT" wrappingWidth="281.939453125">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="BookingButton" layoutX="686.0" layoutY="437.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="293.0" text="Booking">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
