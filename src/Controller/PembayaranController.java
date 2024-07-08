@@ -78,6 +78,7 @@ public class PembayaranController {
         driverToggleGroup = new ToggleGroup();
         DriverRadioButton.setToggleGroup(driverToggleGroup);
         withoutDriverRadioButton.setToggleGroup(driverToggleGroup);
+        CancelPembayaranButton.setOnAction(event -> handleCancelPembayaran());
     }
 
     private void handleMetodePembayaranSelection() {
@@ -152,7 +153,7 @@ public class PembayaranController {
             this.discountRate = discountRate;
             this.total = (this.total * this.totalHari) - ((this.total * this.totalHari) * discountRate);
 
-            Total.setText(String.format("%.2f", this.total));
+            Total.setText(formatCurrency(this.total));
         } catch (NumberFormatException e) {
             showAlert(AlertType.ERROR, "Input Error", "Invalid total amount entered.");
         }
@@ -207,9 +208,23 @@ public class PembayaranController {
 
         this.total = (this.total * this.totalHari) - ((this.total * this.totalHari) * discountRate);
 
-        Total.setText(String.format("%.2f", this.total));
+        Total.setText(formatCurrency(this.total));
     }
 
+    private void handleCancelPembayaran() {
+        MasaSewaComboBox.setValue(null);
+        MetodePembayaranComboBox.setValue(null);
+        PromoComboBox.setValue(null);
+        driverToggleGroup.selectToggle(null);
+        Total.setText("0.00");
+
+        showAlert(AlertType.INFORMATION, "Pembayaran Dibatalkan", "Pembayaran telah dibatalkan.");
+    }
+
+    private String formatCurrency(double amount) {
+        int roundedAmount = (int) Math.round(amount);
+        return "Rp " + roundedAmount;
+    }
    
  
 }

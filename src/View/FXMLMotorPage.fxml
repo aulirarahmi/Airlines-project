@@ -155,7 +155,7 @@
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Text>
-                              <Button fx:id="ButtonMotorIT20" layoutX="20.0" layoutY="443.0" mnemonicParsing="false" onAction="#initialize" prefHeight="41.0" prefWidth="261.0" styleClass="button-pane" stylesheets="@design.css" text="Rp957.500/day">
+                              <Button fx:id="ButtonMotorIT20" layoutX="20.0" layoutY="443.0" mnemonicParsing="false" onAction="#initialize" prefHeight="41.0" prefWidth="261.0" styleClass="button-pane" stylesheets="@design.css" text="Rp800.000/day">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font>
@@ -218,7 +218,7 @@
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Text>
-                              <Button fx:id="ButtonMotorIT18" layoutX="20.0" layoutY="443.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="261.0" styleClass="button-pane" stylesheets="@design.css" text="Rp1.500.000/day">
+                              <Button fx:id="ButtonMotorIT18" layoutX="20.0" layoutY="443.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="261.0" styleClass="button-pane" stylesheets="@design.css" text="Rp800.000/day">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font>
