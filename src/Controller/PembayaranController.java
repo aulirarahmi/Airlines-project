@@ -1,6 +1,9 @@
 package Controller;
 
+import java.io.IOException;
+
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -8,7 +11,11 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
@@ -219,11 +226,26 @@ public class PembayaranController {
         Total.setText("0.00");
 
         showAlert(AlertType.INFORMATION, "Pembayaran Dibatalkan", "Pembayaran telah dibatalkan.");
+        showHomePage(null);
     }
 
     private String formatCurrency(double amount) {
         int roundedAmount = (int) Math.round(amount);
         return "Rp " + roundedAmount;
+    }
+
+    @FXML
+    private void  showHomePage(MouseEvent event) {
+       try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/FXMLHome.fxml"));
+            Parent root = loader.load();
+            Stage stage = (Stage) CancelPembayaranButton.getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
    
  
