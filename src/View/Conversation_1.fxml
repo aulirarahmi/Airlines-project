@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Coversation_1">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="1028.0" style="-fx-background-color: #a0ccc0;">
+               <children>
+                  <Button layoutX="285.0" layoutY="62.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="484.0" styleClass="button-pane" stylesheets="@design.css" />
+                  <Button fx:id="NextToConversation_2" layoutX="926.0" layoutY="658.0" mnemonicParsing="false" onAction="#initialize" prefHeight="27.0" prefWidth="81.0" styleClass="button-pesan" stylesheets="@design.css" text="Next" />
+                  <Button fx:id="SkipToHomePage" layoutX="824.0" layoutY="658.0" mnemonicParsing="false" onAction="#initialize" prefHeight="27.0" prefWidth="81.0" styleClass="button-pesan" stylesheets="@design.css" text="Skip" />
+                  <ImageView fitHeight="140.0" fitWidth="144.0" layoutX="808.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Downloads/panda%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="171.0" fitWidth="175.0" layoutX="49.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Downloads/wolf.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="137.0" fitWidth="137.0" layoutX="824.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Downloads/panda%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="94.0" layoutX="901.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Downloads/charging-station.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="220.0" layoutY="237.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="439.0" styleClass="button-pane" stylesheets="@design.css" />
+                  <Button layoutX="275.0" layoutY="407.0" mnemonicParsing="false" prefHeight="115.0" prefWidth="511.0" styleClass="button-pane" stylesheets="@design.css" />
+                  <Text layoutX="313.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kamu tahu nggak, ada bahan bakar baru yang ramah lingkungan untuk kendaraan?" wrappingWidth="428.4072265625">
+                     <font>
+                        <Font name="Symbol" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="237.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apa itu? Aku cuma tahu bensin dan solar." wrappingWidth="428.4072265625">
+                     <font>
+                        <Font name="Symbol" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="309.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nah, sekarang ada bahan bakar listrik! Kendaraan yang pakai listrik ini nggak mengeluarkan asap beracun, jadi udara kita lebih bersih" wrappingWidth="453.4072265625">
+                     <font>
+                        <Font name="Symbol" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
