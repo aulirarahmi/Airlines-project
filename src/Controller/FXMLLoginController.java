@@ -56,7 +56,7 @@ public class FXMLLoginController {
             for (int i = 0; i < userList.getUserLists().size(); i++) {
                 if(username.equals(userList.getUserLists().get(i).getUsername()) && password.equals(userList.getUserLists().get(i).getPassword())) {
                     showAlert(AlertType.INFORMATION, "Login Success", "Welcome " + username );
-                    redirectToHomePage();
+                    redirectToSapaPage();
                     return;
                 }
             }
@@ -71,9 +71,9 @@ public class FXMLLoginController {
         return;    
     }
 
-    public void redirectToHomePage() {
+    public void redirectToSapaPage() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/View/FXMLHome.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/View/sapaan.fxml"));
             Stage stage = (Stage) MasukButton.getScene().getWindow();
             Scene scene = new Scene(fxmlLoader.load());
             stage.setScene(scene);

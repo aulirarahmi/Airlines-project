@@ -2,6 +2,7 @@ package Controller;
 
 import java.io.IOException;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
@@ -151,15 +152,15 @@ public class PembayaranController {
     }
 
     private void applyPromoUmum() {
-        showAlert(AlertType.INFORMATION, "Promo digunakan", "Kamu Memilih Promo Dosen");
+        showAlert(AlertType.INFORMATION, "Promo digunakan", "Kamu Memilih Promo Umum");
         applyDiscount(0.10); // diskon 10%
     }
 
     private void applyDiscount(double discountRate) {
         try {
             this.discountRate = discountRate;
-            this.total = (this.total * this.totalHari) - ((this.total * this.totalHari) * discountRate);
-
+            double hargaTotal = SharedModel.getInstance().getInitialPrice();
+            this.total = (hargaTotal * this.totalHari) - ((hargaTotal * this.totalHari) * discountRate);
             Total.setText(formatCurrency(this.total));
         } catch (NumberFormatException e) {
             showAlert(AlertType.ERROR, "Input Error", "Invalid total amount entered.");
@@ -191,14 +192,17 @@ public class PembayaranController {
 
     private void processCashPayment() {
         showAlert(AlertType.INFORMATION, "Payment Successful", "Your cash payment has been processed successfully.");
+        redirectToConfirmPaymentScene(null);
     }
 
     private void processMobileBankingPayment() {
         showAlert(AlertType.INFORMATION, "Payment Successful", "Your mobile banking payment has been processed successfully.");
+        redirectToConfirmPaymentScene(null);
     }
 
     private void processCreditPayment() {
         showAlert(AlertType.INFORMATION, "Payment Successful", "Your credit payment has been processed successfully.");
+        redirectToConfirmPaymentScene(null);
     }
 
     private void showAlert(AlertType alertType, String title, String message) {
@@ -213,7 +217,8 @@ public class PembayaranController {
         String selectedMethod = MasaSewaComboBox.getValue().replace(" hari", "");
         this.totalHari = Double.parseDouble(selectedMethod);
 
-        this.total = (this.total * this.totalHari) - ((this.total * this.totalHari) * discountRate);
+        double hargaTotal = SharedModel.getInstance().getInitialPrice();
+        this.total = (hargaTotal * this.totalHari) - ((hargaTotal * this.totalHari) * discountRate);
 
         Total.setText(formatCurrency(this.total));
     }
@@ -223,7 +228,10 @@ public class PembayaranController {
         MetodePembayaranComboBox.setValue(null);
         PromoComboBox.setValue(null);
         driverToggleGroup.selectToggle(null);
-        Total.setText("0.00");
+        this.total = 0; // Mengatur total menjadi nol
+        this.totalHari = 1;
+        this.discountRate = 0;
+        Total.setText(formatCurrency(this.total)); // Mengatur label Total menjadi "Rp 0"
 
         showAlert(AlertType.INFORMATION, "Pembayaran Dibatalkan", "Pembayaran telah dibatalkan.");
         showHomePage(null);
@@ -248,5 +256,18 @@ public class PembayaranController {
         }
     }
    
+    @FXML
+    private void  redirectToConfirmPaymentScene(ActionEvent event){
+       try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/ConfirmPayment.fxml"));
+            Parent root = loader.load();
+            Stage stage = (Stage) CancelPembayaranButton.getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
  
 }
